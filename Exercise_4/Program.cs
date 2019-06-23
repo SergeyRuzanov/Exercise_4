@@ -18,6 +18,11 @@ namespace Exercise_4
         static void Main(string[] args)
         {
             double x;
+            Console.WriteLine("Задание 4:");
+            Console.WriteLine("Даны действительное число х, натуральное число q (0 <= х < 1, q >= 2).\n" +
+                              "Получить пять цифр q-ичного представления числа х, т. е. получить последовательность целых неотрицательных а(-1) ..., а(-5) такую," + 
+                              "что x = a(-1) * q^-1 + ... + a(-5) * q^-5 + r, (r < q^-5).\n");
+
             Console.WriteLine("Введите число x:");
             while (!double.TryParse(Console.ReadLine(), out x) || x >= 1 || x < 0)
                 Console.WriteLine("Ошибка! Введите вещественное число, которое входит в диапазон [0;1).");
